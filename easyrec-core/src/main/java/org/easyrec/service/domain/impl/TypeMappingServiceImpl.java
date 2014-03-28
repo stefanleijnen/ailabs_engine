@@ -637,6 +637,8 @@ public class TypeMappingServiceImpl implements TypeMappingService {
     }
 
     public Integer getIdOfSourceType(Integer tenantId, String sourceType) {
+    	System.out.println("tenantId " + tenantId);
+    	System.out.println("sourceType " + sourceType);
         return sourceTypeDAO.getIdOfType(tenantId, sourceType);
     }
 

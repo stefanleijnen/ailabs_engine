@@ -59,6 +59,12 @@ public class PearsonServiceImpl implements PearsonService {
         this.latestActionDao = latestActionDao;
         this.tenantService = tenantService;
         this.typeMappingService = typeMappingService;
+        
+        // GJ
+        weightDao.createTable();
+        userAssocDao.createTable();
+        userDao.createTable();
+        latestActionDao.createTable();
     }
 
     public void perform(final Integer tenantId) {

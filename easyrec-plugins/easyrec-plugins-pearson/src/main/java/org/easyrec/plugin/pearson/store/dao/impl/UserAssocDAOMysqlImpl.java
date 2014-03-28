@@ -78,7 +78,7 @@ public class UserAssocDAOMysqlImpl extends AbstractTableCreatingDAOImpl implemen
         }
     }
 
-    private final static String TABLE_CREATING_SQL_SCRIPT_NAME = "classpath:sql/content/PearsonUserAssoc.sql";
+    private final static String TABLE_CREATING_SQL_SCRIPT_NAME = "classpath:sql/plugins/PearsonUserAssoc.sql";
 
     /**
      * @param sqlScriptService

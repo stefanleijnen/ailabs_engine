@@ -74,7 +74,7 @@ public class UserDAOMysqlImpl extends AbstractTableCreatingDAOImpl implements Us
     }
 
     private static RowMapper defaultUserRowMapper = new UserRowMapper();
-    private final static String TABLE_CREATING_SQL_SCRIPT_NAME = "classpath:sql/content/User.sql";
+    private final static String TABLE_CREATING_SQL_SCRIPT_NAME = "classpath:sql/plugins/User.sql";
 
     /**
      * @param sqlScriptService

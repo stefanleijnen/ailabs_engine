@@ -40,7 +40,7 @@ public class PearsonServiceCLI extends AbstractDependencyInjectionSpringCLI {
 
     @Override
     protected String[] getConfigLocations() {
-        return new String[]{"spring/content/pearson/AllInOne_Pearson.xml"};
+        return new String[]{"spring/plugins/pearson/AllInOne_Pearson.xml"};
     }
 
     @SuppressWarnings("deprecation")

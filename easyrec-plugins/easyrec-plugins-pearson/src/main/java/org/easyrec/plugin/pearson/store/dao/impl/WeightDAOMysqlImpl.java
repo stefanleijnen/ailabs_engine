@@ -53,7 +53,7 @@ public class WeightDAOMysqlImpl extends AbstractTableCreatingDAOImpl implements 
     }
 
     private static final RowMapper defaultWeightMapper = new WeightMapper();
-    private static final String TABLE_CREATING_SQL_SCRIPT_NAME = "classpath:sql/content/Weight.sql";
+    private static final String TABLE_CREATING_SQL_SCRIPT_NAME = "classpath:sql/plugins/Weight.sql";
 
     protected WeightDAOMysqlImpl(final DataSource dataSource, final SqlScriptService sqlScriptService) {
         super(sqlScriptService);

@@ -59,7 +59,7 @@ public class LatestActionDAOMysqlImpl extends AbstractTableCreatingDAOImpl imple
     private static final RowMapper defaultRatingMapper = new RatingRowMapper(DEFAULT_RATING_VALUE_COLUMN_NAME,
             DEFAULT_ACTION_TIME_COLUMN_NAME);
     private static final String MAX_ACTION_TIME = "maxActionTime";
-    private static final String TABLE_CREATING_SCRIPT_NAME = "classpath:sql/content/LatestAction.sql";
+    private static final String TABLE_CREATING_SCRIPT_NAME = "classpath:sql/plugins/LatestAction.sql";
 
     //~ Constructors ///////////////////////////////////////////////////////////////////////////////////////////////////
 

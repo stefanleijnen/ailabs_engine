@@ -37,13 +37,17 @@
 
     <!-- core -->
     <import resource="classpath:spring/easyrecDataSource.xml"/>
+    <import resource="classpath:spring/core/TenantConfig_DEFAULT.xml"/>
     <import resource="classpath:spring/core/dao/ItemAssocDAO.xml"/>
     <import resource="classpath:spring/core/dao/AuthenticationDAO.xml"/>
-    <import resource="classpath:spring/core/TenantConfig_DEFAULT.xml"/>
     <import resource="classpath:spring/core/dao/TenantDAO.xml"/>
-    <import resource="classpath:spring/core/service/TenantService.xml"/>
     <import resource="classpath:spring/core/dao/ActionDAO.xml"/>
+    <import resource="classpath:spring/core/dao/ProfileDAO.xml"/>
+    <import resource="classpath:spring/core/dao/idMappingDAO.xml"/>
+    <import resource="classpath:spring/core/service/TenantService.xml"/>
     <import resource="classpath:spring/core/service/ItemAssocService.xml"/>
+    <import resource="classpath:spring/core/service/ClusterService.xml"/>
+    <import resource="classpath:spring/core/service/ClusterStrategies.xml"/>
 
     <!-- core types -->
     <import resource="classpath:spring/core/dao/types/ActionTypeDAO.xml"/>
@@ -63,5 +67,6 @@
     <import resource="classpath:spring/plugins/pearson/dao/WeightDAO.xml"/>
     <import resource="classpath:spring/plugins/pearson/service/PearsonService.xml"/>
     <import resource="classpath:spring/plugins/pearson/PearsonSettings_DEFAULT.xml"/>
+    <import resource="classpath:spring/plugins/pearson/easyrecPearsonDataSource.xml"/>
 
 </beans>
