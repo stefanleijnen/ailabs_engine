@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="easyrec-web">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/jaxws/wsgen/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources.localhost"/>
+        <dependent-module archiveName="easyrec-plugin-container-0.98.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/easyrec-plugin-container/easyrec-plugin-container">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="easyrec-core-0.98.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/easyrec-core/easyrec-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="easyrec-plugin-api-0.98.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/easyrec-plugin-api/easyrec-plugin-api">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="easyrec-utils-0.98.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/easyrec-utils/easyrec-utils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="easyrec-web"/>
+        <property name="java-output-path" value="/easyrec-web/target/classes"/>
+    </wb-module>
+</project-modules>
