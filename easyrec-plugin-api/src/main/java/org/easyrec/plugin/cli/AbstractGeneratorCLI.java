@@ -67,13 +67,23 @@ public abstract class AbstractGeneratorCLI<GC extends GeneratorConfiguration, GS
         String[] generatorConfigurations = getConfigurations();
 
         return ObjectArrays.concat(generatorConfigurations,
-                new String[]{"classpath:spring/core/spring.easyrec-core.PropertyPlaceholderConfigurerDB.xml",
-                        "classpath:spring/core/easyrecDataSource.xml", "classpath:spring/core/ItemAssocDAO.xml",
-                        "classpath:spring/core/AuthenticationDAO.xml", "classpath:spring/core/TenantConfig_DEFAULT.xml",
-                        "classpath:spring/core/TenantDAO.xml",
-                        "classpath:spring/core/spring.easyrec-core.SQLScriptServiceSatRecommenderDS.xml",
-                        "classpath:spring/core/TenantService.xml", "classpath:spring/core/ActionDAO.xml",
-                        "classpath:spring/core/ItemAssocDAO.xml", "easyrec-plugin.xml"}, String.class);
+                new String[]{
+//        				"classpath:spring/core/spring.easyrec-core.PropertyPlaceholderConfigurerDB.xml",
+                        "classpath:spring/easyrecDataSource.xml", 
+                        "classpath:spring/core/dao/ItemAssocDAO.xml",
+                        "classpath:spring/core/dao/AuthenticationDAO.xml", 
+                        "classpath:spring/core/TenantConfig_DEFAULT.xml",
+                        "classpath:spring/core/dao/TenantDAO.xml",
+//                        "classpath:spring/core/spring.easyrec-core.SQLScriptServiceSatRecommenderDS.xml",
+                        "classpath:spring/core/service/TenantService.xml", 
+                        "classpath:spring/core/service/ClusterService.xml", 
+                        "classpath:spring/core/service/ClusterStrategies.xml", 
+                        "classpath:spring/core/service/ItemAssocService.xml", 
+                        "classpath:spring/core/dao/ActionDAO.xml",
+                        "classpath:spring/core/dao/ProfileDAO.xml",
+                        "classpath:spring/core/dao/ItemAssocDAO.xml", 
+                        "classpath:spring/core/dao/idMappingDAO.xml", 
+                        "easyrec-plugin.xml"}, String.class);
     }
 
     public abstract String[] getConfigurations();
