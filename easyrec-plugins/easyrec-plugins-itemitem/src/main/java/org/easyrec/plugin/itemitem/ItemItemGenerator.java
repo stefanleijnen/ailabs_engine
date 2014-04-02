@@ -108,7 +108,6 @@ public class ItemItemGenerator extends GeneratorPluginSupport<ItemItemConfigurat
 
     @Override
     protected void doInstall() throws Exception {
-    	System.out.println("ASDFASDFDFADFSADFASDFASDFSADFASDFAFDSADFAFDASDFSADFASFD");
         actionDAO.createTable();
         userAssocDAO.createTable();
     }
